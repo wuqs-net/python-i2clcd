@@ -6,6 +6,7 @@ Copyright (C) 2019 SiYu Wu <wu.siyu@hotmail.com>. All Rights Reserved.
 """
 
 __author__ = 'SiYu Wu <wu.siyu@hotmail.com>'
+__version__ = '0.1.0'
 
 import smbus
 import time

@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "i2clcd"
+description = "driver for LCD1602/2002/2004 with I2C adapter, for Raspberry Pi or other device"
+readme = "README.md"
+dynamic = ["version"]
+authors = [
+    { name = "SiYu Wu", email = "wu.siyu@hotmail.com" },
+]
+requires-python = ">= 3.8"
+dependencies = [
+    "smbus",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3 :: Only",
+    "License :: OSI Approved :: MIT License",
+]
+
+[project.urls]
+Homepage = "https://github.com/WuSiYu/python-i2clcd"
+Repository = "https://github.com/WuSiYu/python-i2clcd.git"
+Issues = "https://github.com/WuSiYu/python-i2clcd/issues"
+
+[tool.setuptools.dynamic]
+version = { attr = "i2clcd.__version__" }
